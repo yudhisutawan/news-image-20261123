@@ -1,12 +1,12 @@
 # makefun-news-image-20261123
 
 [![make.fun · news-image-20261123](https://make.fun/badge/news-image-20261123.svg)](https://make.fun/bounty/news-image-20261123?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
-[![rank](https://make.fun/badge/news-image-20261123/yudhisutawan/makefun-news-image-20261123/rank.svg)](https://make.fun/bounty/news-image-20261123/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
-[![reward](https://make.fun/badge/news-image-20261123/yudhisutawan/makefun-news-image-20261123/reward.svg)](https://make.fun/bounty/news-image-20261123?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
+[![rank](https://make.fun/badge/news-image-20261123/yudhisutawan/news-image-20261123/rank.svg)](https://make.fun/bounty/news-image-20261123/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
+[![reward](https://make.fun/badge/news-image-20261123/yudhisutawan/news-image-20261123/reward.svg)](https://make.fun/bounty/news-image-20261123?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
 
 The World, Today — a one-page newspaper front page summing up the world's news of Monday 23 November 2026 in 48 stories: COP31 collapses with no deal at all, tankers burn in the Strait of Hormuz, NATO meets as Russian missiles land in Poland, sea drones sink a Russian warship off Libya — plus 44 more stories across world, business, tech, science, sport and culture.
 
-The picture is pre-rendered and stored in this repository as `entry.png`. `main.py` only moves it to the output path, using nothing but the Python standard library: no network, no clock, no randomness, so a second run writes byte-identical output. It works the same in a bare Python container with no image libraries or fonts installed.
+`main.py` generates the picture from scratch and writes it to the output path, using nothing but the Python standard library: no network, no clock, no randomness, so a second run writes byte-identical output. A copy of the generated picture is also stored in this repository as `entry.png`. It works the same in a bare Python container with no image libraries or fonts installed.
 
 ## How to run it
 
@@ -14,7 +14,7 @@ The picture is pre-rendered and stored in this repository as `entry.png`. `main.
 python3 main.py   # writes /output/entry.png
 ```
 
-Running it drops the picture at `/output/entry.png` — or at `$MAKEFUN_OUTPUT_DIR/entry.png` when that variable is set. The file is a 1024x1024 PNG of 189,449 bytes, far below the 1 MiB cap.
+Running it drops the picture at `/output/entry.png` — or at `$MAKEFUN_OUTPUT_DIR/entry.png` when that variable is set. The file is a 1024x1024 PNG of 164,491 bytes, far below the 1 MiB cap.
 
 ## How it was built
 
