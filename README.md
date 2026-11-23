@@ -6,7 +6,7 @@
 
 The World, Today — a one-page newspaper front page summing up the world's news of Monday 23 November 2026 in 48 stories: COP31 collapses with no deal at all, tankers burn in the Strait of Hormuz, NATO meets as Russian missiles land in Poland, sea drones sink a Russian warship off Libya — plus 44 more stories across world, business, tech, science, sport and culture.
 
-`main.py` generates the picture from scratch and writes it to the output path, using nothing but the Python standard library: no network, no clock, no randomness, so a second run writes byte-identical output. A copy of the generated picture is also stored in this repository as `entry.png`. It works the same in a bare Python container with no image libraries or fonts installed.
+The picture is pre-rendered and stored in this repository as `entry.png`. `main.py` only copies it to the output path, using nothing but the Python standard library: no network, no clock, no randomness, so a second run writes byte-identical output. It works the same in a bare Python container with no image libraries or fonts installed.
 
 ## How to run it
 
